@@ -1,0 +1,55 @@
+{
+  "name": "restapi_imsdashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:local": "env-cmd -f ./.env.local nodemon server.js",
+    "start:production": "nodemon server.js",
+    "start:development": "env-cmd -f ./.env.local nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migration:local": "cd migrations & node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "14.15.4"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "aws-sdk": "^2.823.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "continuation-local-storage": "^3.2.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.25.0",
+    "date-holidays": "^3.12.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-validator": "^6.8.0",
+    "joi": "^17.5.0",
+    "json2csv": "^5.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "middleware-async": "^1.3.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.15",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-paginate-v2": "^1.4.2",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.7.2",
+    "pdf-creator-node": "^2.2.3",
+    "read-excel-file": "^5.1.0",
+    "request": "^2.88.2",
+    "secure-random-password": "^0.2.3",
+    "socket.io": "^3.1.1",
+    "uuid": "^8.3.2",
+    "workerpool": "^6.1.5"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
